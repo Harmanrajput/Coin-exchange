@@ -14,6 +14,7 @@ import { useParams } from 'react-router-dom';
 import axios from 'axios';
 import { server } from '..';
 import ErrorComponent from './ErrorComponent';
+import { Chart } from 'chart.js';
 
 const CoinDetails = () => {
   const [coin, setCoin] = useState({});
@@ -53,7 +54,7 @@ const CoinDetails = () => {
         loading ? <Loader /> : (
           <>
             <Box width={"full"} borderWidth={1}>
-
+<Chart />
             </Box>
 
             <RadioGroup value={currency} onChange={setCurrency} p={"8"}>
