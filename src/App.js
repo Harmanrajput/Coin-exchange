@@ -3,6 +3,7 @@ import './App.css';
 import CoinDetails from "./components/CoinDetails";
 import Coins from "./components/Coins";
 import Exchange from "./components/Exchange";
+import Footer from "./components/Footer";
 import Header from "./components/Header";
 import Home from "./components/Home";
 
@@ -17,6 +18,7 @@ function App() {
         <Route path="/coin/:id" element={<CoinDetails />} />
 
       </Routes>
+      <Footer/>
     </Router>
   );
 }
